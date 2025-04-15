@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router";
-import { Home, PageNotFound } from "../pages";
+import { Contact, Home, PageNotFound, Exams } from "../pages";
+
 
 
 export const AllRoutes = () => {
@@ -7,6 +8,8 @@ export const AllRoutes = () => {
         <div >
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="exams" element={<Exams />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
         </div>
